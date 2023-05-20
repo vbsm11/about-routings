@@ -1,11 +1,6 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
-import {FilterValuesType} from './App';
-
-export type TaskType = {
-    id: string
-    title: string
-    isDone: boolean
-}
+import React from 'react';
+import {ChangeEvent, KeyboardEvent, useState} from 'react';
+import {FilterValuesType, TaskType} from './App';
 
 type PropsType = {
     todolistId: string
