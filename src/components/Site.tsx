@@ -14,30 +14,35 @@ export const Site = () => {
             <div className={styles.body}>
                 <div className={styles.nav}>
                     <div>
-                        <NavLink to='/page1'>
+                        <NavLink to="/page1" className={isActive => isActive? styles.active: styles.navLink}>
                             Page 1
                         </NavLink>
-                        <NavLink to='/page2'>
+                    </div>
+                    <div>
+                        <NavLink to="/page2" className={isActive => isActive? styles.active: styles.navLink}>
                             Page 2
                         </NavLink>
-                        <NavLink to='/page3'>
+                    </div>
+                    <div>
+                        <NavLink to="/page3" className={isActive => isActive? styles.active: styles.navLink}>
                             Page 3
                         </NavLink>
                     </div>
                 </div>
-                <div className={styles.content}>
-               <Routes>
-                   <Route path='/' element={<Navigate to='/page1'/>}/>
+                    <div className={styles.content}>
+                        <Routes>
+                            <Route path="/" element={<Navigate to="/page1"/>}/>
 
-                   <Route path='/page1' element={<PageOne/>}/>
-                   <Route path='/page2' element={<PageTwo/>}/>
-                   <Route path='/page3' element={<PageThree/>}/>
+                            <Route path="/page1" element={<PageOne/>}/>
+                            <Route path="/page2" element={<PageTwo/>}/>
+                            <Route path="/page3" element={<PageThree/>}/>
 
-                   <Route path='/*' element={<Error404/>}/>
-               </Routes>
+                            <Route path="/*" element={<Error404/>}/>
+                        </Routes>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
-};
+
+            )
+            }
 
