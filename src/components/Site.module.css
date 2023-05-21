@@ -20,7 +20,7 @@
 
 }
 
-.content{
+.content {
     background-color:#282c34;
     height: 500px;
     width: 70%;
@@ -28,7 +28,7 @@
     font-size: 30px;
 }
 
-.navLink {
+.nav a.navLink {
     text-decoration: none;
     color: #282c34;
 }

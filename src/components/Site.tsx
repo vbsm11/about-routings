@@ -14,17 +14,17 @@ export const Site = () => {
             <div className={styles.body}>
                 <div className={styles.nav}>
                     <div>
-                        <NavLink to="/page1" className={isActive => isActive? styles.active: styles.navLink}>
+                        <NavLink to="/page1" className={({isActive}) => isActive? styles.active: styles.navLink}>
                             Page 1
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/page2" className={isActive => isActive? styles.active: styles.navLink}>
+                        <NavLink to="/page2" className={({isActive})=> isActive? styles.active: styles.navLink}>
                             Page 2
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/page3" className={isActive => isActive? styles.active: styles.navLink}>
+                        <NavLink to="/page3" className={({isActive}) => isActive? styles.active: styles.navLink}>
                             Page 3
                         </NavLink>
                     </div>
@@ -42,7 +42,6 @@ export const Site = () => {
                     </div>
                 </div>
             </div>
-
             )
-            }
+}
 
