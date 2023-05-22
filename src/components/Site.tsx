@@ -11,29 +11,11 @@ export const Site = () => {
         <div>
             <div className={styles.header}><h1>HEADER</h1></div>
             <div className={styles.body}>
+
                 <div className={styles.nav}>
                     <NavWrapper><NavLink to="/page/0">Page 1</NavLink></NavWrapper>
                     <NavWrapper><NavLink to="/page/1">Page 2</NavLink></NavWrapper>
                     <NavWrapper><NavLink to="/page/2">Page 3</NavLink></NavWrapper>
-
-                    {/*<div>*/}
-                    {/*    <NavLink to="/page/0" className={({isActive}) => isActive ? styles.active : styles.navLink}>*/}
-                    {/*        Page 1*/}
-                    {/*    </NavLink>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <NavLink to="/page/1" className={({isActive}) => isActive ? styles.active : styles.navLink}>*/}
-                    {/*        Page 2*/}
-                    {/*    </NavLink>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <NavLink to="/page/2" className={({isActive}) => isActive ? styles.active : styles.navLink}>*/}
-                    {/*        Page 3*/}
-                    {/*    </NavLink>*/}
-                    {/*    <div>*/}
-                    {/*        <a href="/page/0">Native link</a>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                 </div>
 
                 <div className={styles.content}>
