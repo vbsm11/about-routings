@@ -1,32 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import styles from './Site.module.css'
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom';
 import {Page} from './pages/Page';
 import {dataState} from '../data/dataState';
 import {styled} from 'styled-components';
+import {useWindowSize} from '../helpers/useWindowSize';
 
 
 export const Site = () => {
 
-    function useWindowSize() {
-        const [windowSize, setWindowSize] = useState(0);
-
-        useEffect(() => {
-
-            function handleResize() {
-                setWindowSize(window.innerWidth)
-            }
-
-            window.addEventListener('resize', handleResize);
-            handleResize();
-
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-        return windowSize;
-    }
-
     let size = useWindowSize()
-    console.log(size)
 
     return (
         <div>
