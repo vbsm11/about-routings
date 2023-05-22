@@ -16,7 +16,7 @@ export const Site = () => {
             <div className={styles.header}><h1>HEADER</h1></div>
             <div className={styles.body}>
 
-                {size > 600 &&
+                {size > 700 &&
                     <div className={styles.nav}>
                         <NavWrapper><NavLink to="/page/0">Page 1</NavLink></NavWrapper>
                         <NavWrapper><NavLink to="/page/1">Page 2</NavLink></NavWrapper>
